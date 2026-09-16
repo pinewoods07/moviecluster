@@ -103,10 +103,10 @@ cluster_order = (
     .index.tolist()
 )
 
-symbol_map = {cluster_order[0]: "㉮", cluster_order[1]: "㉯", cluster_order[2]: "㉰"}
+symbol_map = {cluster_order[0]: "대작", cluster_order[1]: "평작", cluster_order[2]: "망작"}
 df["cluster"] = df["cluster_raw"].map(symbol_map)
 
-symbol_order = ["㉮", "㉯", "㉰"]
+symbol_order = ["대작", "평작", "망작"]
 
 # ---------------------------
 # 2D 산점도
